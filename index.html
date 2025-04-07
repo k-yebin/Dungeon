@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dungeon</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/plugin/splitting.min.js"></script>
+    <script src="js/plugin/scrolla.jquery.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="wrap">
+        <header>
+            <div class="header_inner">
+                <div class="header_left">
+                    <a href="#" class="logo">
+                        <img src="images/logo.png" alt="던전앤파이터">
+                    </a>
+                    <div class="login_btn">
+                        <a href="#" class="nexon_login">넥슨ID 로그인</a>
+                        <a href="#" class="df_login">던파ID 로그인</a>
+                    </div>
+                </div>
+                <div class="header_right">
+                    <button class="menu_btn">
+                        <img src="images/menu_open.png" alt="메뉴 열기">
+                    </button>
+                    <a href="#" class="start_btn">
+                        <img src="images/game_btn.png" alt="게임 시작하기">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <section class="main">
+            <div class="main_video">
+                <video autoplay muted playsinline loop class="video_load" src="images/main_video.mp4"></video>
+            </div>
+            <div class="main_des animate" data-animate="motion">
+                <div class="update_info">
+                    <p class="date">2025. 04. 17</p>
+                    <p class="update">UPDATE</p>
+                </div>
+                <div class="d_day">
+                    <p class="count">D-<span>11</span></p>
+                    <p class="time">12 : 10 : 30</p>
+                </div>
+            </div>
+            <div class="nabel">
+                <ul class="nabel_wrap animate" data-animate="nabel_ani">
+                    <li class="nabel1 n">
+                        <div class="tit_img">
+                            <img src="images/title1.png" alt="Nabel">
+                            <img src="images/title1_on.png" class="hover animate" alt="Nabel" data-animate="nabel_on">
+                            <div class="sub_img">
+                                <img src="images/nabel1.png" alt="던전 앤 파이터">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nabel1 a">
+                        <div class="tit_img">
+                            <img src="images/title2.png" alt="Nabel">
+                            <img src="images/title2_on.png" class="hover animate" alt="Nabel" data-animate="nabel_on">
+                        </div>
+                    </li>
+                    <li class="nabel1 b">
+                        <div class="tit_img">
+                            <img src="images/title3.png" alt="Nabel">
+                            <img src="images/title3_on.png" class="hover animate" alt="Nabel" data-animate="nabel_on">
+                            <div class="sub_img">
+                                <img src="images/nabel2.png" alt="던전 앤 파이터">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nabel1 l">
+                        <div class="tit_img">
+                            <img src="images/title4.png" alt="Nabel">
+                            <img src="images/title4_on.png" class="hover animate" alt="Nabel" data-animate="nabel_on">
+                            <div class="sub_img">
+                                <img src="images/nabel3.png" alt="던전 앤 파이터">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nabel1 e">
+                        <div class="tit_img">
+                            <img src="images/title5.png" alt="Nabel">
+                            <img src="images/title5_on.png" class="hover animate" alt="Nabel" data-animate="nabel_on">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <ul class="scroll_arrow">
+                <li>
+                    <img src="images/scroll_arrow.png" alt="아래로 스크롤하기">
+                </li>
+                <li>
+                    <img src="images/scroll_arrow.png" alt="아래로 스크롤하기">
+                </li>
+                <li>
+                    <img src="images/scroll_arrow.png" alt="아래로 스크롤하기">
+                </li>
+            </ul>
+        </section>
+        <section class="section2">
+            <div class="section2_bg">
+                <img src="images/section2_bg.jpg" alt="배경 색상">
+            </div>
+            <div class="fake_bg">
+                <img src="images/fake_bg.png" alt="그라데이션 배경">
+            </div>
+            <div class="article">
+                <ul class="article_inner">
+                    <li>
+                        <div class="char_img">
+                            <img class="animate" data-animate="zzz" src="images/grid1.jpg" alt="그리드1">
+                        </div>
+                        <div class="over">
+                            <div class="down">
+                                <img src="images/ico_down.png" alt="다운로드">
+                            </div>
+                            <div class="info">
+                                <p class="name">엘디르</p>
+                                <span>찬란한 문명을 가진 행성 테라에서도 최고로 손꼽히는 과학자.</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="char_img">
+                            <img class="animate" data-animate="zzz" src="images/grid2.jpg" alt="그리드1">
+                        </div>
+                        <div class="over">
+                            <div class="down">
+                                <img src="images/ico_down.png" alt="다운로드">
+                            </div>
+                            <div class="info">
+                                <p class="name">아젤리아</p>
+                                <span>연구소에 의문을 가진 채, 이를 조사하는 어린 소녀.</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="char_img">
+                            <img class="animate" data-animate="zzz" src="images/grid3.jpg" alt="그리드1">
+                        </div>
+                        <div class="over">
+                            <div class="down">
+                                <img src="images/ico_down.png" alt="다운로드">
+                            </div>
+                            <div class="info">
+                                <p class="name">참혹의 트라우마트</p>
+                                <span>전투후에 남은 것은 항상 참혹함이었다.<br />익숙해졌다고 생각했지만, 그저 무뎌져 느끼지 못했을 뿐.</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="char_img">
+                            <img class="animate" data-animate="zzz" src="images/grid6.jpg" alt="그리드1">
+                        </div>
+                        <div class="over">
+                            <div class="down">
+                                <img src="images/ico_down.png" alt="다운로드">
+                            </div>
+                            <div class="info">
+                                <p class="name">과학연구소 테아나</p>
+                                <span>과학 연구소 테아나에서는 비밀리에 진행되는 일부 프로젝트들이 존재한다.</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="char_img">
+                            <img class="animate" data-animate="zzz" src="images/grid5.jpg" alt="그리드1">
+                        </div>
+                        <div class="over">
+                            <div class="down">
+                                <img src="images/ico_down.png" alt="다운로드">
+                            </div>
+                            <div class="info">
+                                <p class="name">죽음의 트라우마트</p>
+                                <span>가장 소중한 이가 죽어가던 순간은, 그녀가 가장 두려워하는 기억이 되었다.</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="char_img">
+                            <img class="animate" data-animate="zzz" src="images/grid4.jpg" alt="그리드1">
+                        </div>
+                        <div class="over">
+                            <div class="down">
+                                <img src="images/ico_down.png" alt="다운로드">
+                            </div>
+                            <div class="info">
+                                <p class="name">안개신의 무의식</p>
+                                <span>내면 깊이 잠들어 있는 안개신의 방어기제.</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="char_img">
+                            <img class="animate" data-animate="zzz" src="images/grid7.jpg" alt="그리드1">
+                            <img class="animate" data-animate="zzz" src="images/grid7_on.jpg" alt="그리드1">
+                        </div>
+                        <div class="over">
+                            <div class="down">
+                                <img src="images/ico_down.png" alt="다운로드">
+                            </div>
+                            <div class="info">
+                                <p class="name">나벨 실험실</p>
+                                <span>가장 높은 등급의 과학자들만이 이러한 비밀 프로젝트에 참가할 수 있다.</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="char_img">
+                            <img class="animate" data-animate="zzz" src="images/grid8.jpg" alt="그리드1">
+                        </div>
+                        <div class="over">
+                            <div class="down">
+                                <img src="images/ico_down.png" alt="다운로드">
+                            </div>
+                            <div class="info">
+                                <p class="name">아니마</p>
+                                <span>생명조차 물질로 보고 재배열 할 수 있기에, 그녀는 타인의 죽음에 대해 무덤덤하다.</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="char_img">
+                            <img class="animate" data-animate="zzz" src="images/grid9.jpg" alt="그리드1">
+                        </div>
+                        <div class="over">
+                            <div class="down">
+                                <img src="images/ico_down.png" alt="다운로드">
+                            </div>
+                            <div class="info">
+                                <p class="name"></p>
+                                <span>테라의 찬란한 문명이 인류에게 선사한 기술들은, 자신들을 신에 견주게 만드는 오만함을 주었다.</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="char_img">
+                            <img class="animate" data-animate="zzz" src="images/grid10.jpg" alt="그리드1">
+                        </div>
+                        <div class="over">
+                            <div class="down">
+                                <img src="images/ico_down.png" alt="다운로드">
+                            </div>
+                            <div class="info">
+                                <p class="name">테아나</p>
+                                <span>테라를 지키기 위해 지원한 열두 명의 소녀들의 의지는 그 무엇보다 고결하다</span>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="char_img">
+                            <img class="animate" data-animate="zzz" src="images/grid11.jpg" alt="그리드1">
+                        </div>
+                        <div class="over">
+                            <div class="down">
+                                <img src="images/ico_down.png" alt="다운로드">
+                            </div>
+                            <div class="info">
+                                <p class="name">파괴의 트라우마트</p>
+                                <span>오랜 전쟁 기간동안 반복된 파괴는 그녀의 기억 깊은 곳에 각인 되었다.</span>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="char_img">
+                            <img class="animate" data-animate="zzz" src="images/grid12.jpg" alt="그리드1">
+                        </div>
+                        <div class="over">
+                           
+                            <div class="info">
+                                <p class="name">클리멧 심볼</p>
+                                <span>테라의 열두 국가 중 하나인 클리멧의 상징</span>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="char_img">
+                            <img class="animate" data-animate="zzz" src="images/grid13.jpg" alt="그리드1">
+                        </div>
+                        <div class="over">
+                           
+                            <div class="info">
+                                <p class="name">나벨 심볼</p>
+                                <span>다섯 가지의 힘과 그 모든 것을 아우르는 근원이 담긴 형상.</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="char_img">
+                            <img class="animate" data-animate="zzz" src="images/grid14.jpg" alt="그리드1">
+                        </div>
+                        <div class="over">
+                            <div class="down">
+                                <img src="images/ico_down.png" alt="다운로드">
+                            </div>
+                            <div class="info">
+                                <p class="name">손의 트라우마트</p>
+                                <span>손이 뻗어짐으로서 일어나는 고통.<br/>그녀에게 가해진 실험은 언제나 고통스러웠다.</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="char_img">
+                            <img class="animate" data-animate="zzz" src="images/grid15.jpg" alt="그리드1">
+                        </div>
+                        <div class="over">
+                            <div class="down">
+                                <img src="images/ico_down.png" alt="다운로드">
+                            </div>
+                            <div class="info">
+                                <p class="name">제로</p>
+                                <span>과학 연구소 테아나에 소속되어 있던, 엘디르 이전 최고의 과학자</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="char_img">
+                            <img class="animate" data-animate="zzz" src="images/grid16.jpg" alt="그리드1">
+                            <img class="animate" data-animate="zzz" src="images/grid16_on.jpg" alt="그리드1">
+                        </div>
+                        <div class="over">
+                            <div class="down">
+                                <img src="images/ico_down.png" alt="다운로드">
+                            </div>
+                            <div class="info">
+                                <p class="name">연구소 내부</p>
+                                <span>연구소의 복도는 각국에서 모여든 과학자들의 열띤 토론으로 늘 부산스럽다.</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
