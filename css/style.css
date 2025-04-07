@@ -606,7 +606,6 @@ header .header_inner {
     .main {
         margin-top: 0px;
         height: 1250px;
-        border: 1px solid red;
     }
 
     .main .main_video video {
